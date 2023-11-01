@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% from 'bootstrap5/form.html' import render_form %}
+<html lang="en" data-bs-theme="dark">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    {{ bootstrap.load_css() }}
+    <title>Add Book</title>
+  </head>
+  <body>
+    <h1>Add a new book into the database</h1>
+    {{ render_form(form) }}
+  </body>
+</html>

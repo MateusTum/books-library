@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% from 'bootstrap5/form.html' import render_form %}
+<html lang="en" data-bs-theme="dark">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    {{ bootstrap.load_css() }}
+    <title>Edit Rating</title>
+  </head>
+  <body>
+    <h1>Edit book rating</h1>
+    <p>Book Name: {{ book.title }}</p>
+    <p>Current Rating: {{ book.rating }}</p>
+    {{ render_form(form) }}
+  </body>
+</html>
